@@ -1,0 +1,19 @@
+.Navigation {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 24px;
+    gap: 20px;
+}
+
+
+.link, .activeLink {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--secondary);
+}
+
+.activeLink {
+    text-decoration: underline;
+}

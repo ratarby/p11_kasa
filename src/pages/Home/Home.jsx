@@ -1,19 +1,18 @@
+import React from "react";
+import housing from "../../data/housing.json";
+import styles from "./Home.module.css";
+import Card from "../../components/Card/Card";
+import Banner from "../../components/Banner/Banner";
 
-
-import React from 'react';
-
-const Home = () => {
+export default function Home() {
   return (
-    <div className="Home">
-      <h1 className='welcome' style={{ 
-        fontSize: 'calc(1.5rem + 1.2vw)', 
-        textAlign: 'center' }}
-        >
-          Bienvenue
-        </h1>
-    </div>
-    
+    <main>
+      <Banner page="home" />
+      <div className={styles.containerHousings}>
+        {housing.map(({ id, title, cover }) => (
+          <Card key={id} id={id} title={title} cover={cover} />
+        ))}
+      </div>
+    </main>
   );
-};
-
-export default Home;
+}

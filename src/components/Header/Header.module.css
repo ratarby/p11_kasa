@@ -1,7 +1,6 @@
-.header  {
+.header {
     width: 100%;
-    max-width: 1440px;
-    padding: 32px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;

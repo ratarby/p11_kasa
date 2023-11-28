@@ -1,5 +1,5 @@
 import React from "react";
-import housing from "../../data/housing.json";
+import housing from "../../utils/housing.json";
 import styles from "./Home.module.css";
 import Card from "../../components/Card/Card";
 import Banner from "../../components/Banner/Banner";

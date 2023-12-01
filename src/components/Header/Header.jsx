@@ -8,11 +8,10 @@ import Navigation from "../Navigation/Navigation";
 const Header = () => {
   return (
     <header className={styles.header}>
-    <NavLink to="/">
-      <Logo />
-    </NavLink>
-    <Navigation />
-    
+      <NavLink to="/">
+        <Logo />
+      </NavLink>
+      <Navigation />
   </header>
   );
 };

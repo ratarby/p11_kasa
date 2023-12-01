@@ -1,21 +1,26 @@
 {
-  "short_name": "React App",
+  "short_name": "Kasa",
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "kasa.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "kasa.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     },
     {
-      "src": "logo512.png",
+      "src": "kasa.svg",
+      "type": "image/svg+xml",
+      "sizes": "32x37"
+    },
+    {
+      "src": "kasa_apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "180x180"
     }
   ],
   "start_url": ".",

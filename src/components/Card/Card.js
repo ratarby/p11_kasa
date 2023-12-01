@@ -6,9 +6,9 @@ import styles from "./Card.module.css";
 
 const Card = ({ id, title, cover }) => {
   const coverCard = {
-    background: `var(--linear), url(${cover}) no-repeat center`,
+    background: `var(--linear), url(${cover})  no-repeat center`,
     backgroundSize: "cover",
-  };
+  }
 
   return (
     <Link
@@ -19,6 +19,7 @@ const Card = ({ id, title, cover }) => {
       <h2>{title}</h2>
     </Link>
   );
-};
+}
+
 
 export default Card;

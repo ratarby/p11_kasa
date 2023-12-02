@@ -3,14 +3,14 @@ import Banner from "../../components/Banner/Banner";
 import bannerImage from "../../assets/images/banners/banner-about.webp";
 import Collapse from "../../components/Collapse/Collapse";
 import dropdown  from "../../utils/dropdown.json";
+import styles from "../../pages/About/About.module.css";
 
 const About = () => {
 
   return (
-    <main>
-      <div>
+      <main >
         <Banner title="" image={bannerImage} />
-        <div>
+        <div className={styles.about}>
           {dropdown.map((about) => (
             <Collapse
               key={about.title}
@@ -19,8 +19,7 @@ const About = () => {
             />
           ))}
         </div>
-      </div>
-    </main>
+      </main>
   );
 };
 

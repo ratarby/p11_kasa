@@ -2,13 +2,13 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./Layout.module.css";
+import styles from "./Layout.module.css";
 
 
 
 const Layout = () => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Header />
       <Outlet />
       <Footer />

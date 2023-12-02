@@ -16,15 +16,18 @@ const Collapse = ({ title, description }) => {
     };
 
     return (
-        <div className={styles.container}>
-            <div className={styles.button} onClick={toggleOpen}>
-                {title}
-                <div>
-                    <Arrow style={rotateArrowStyle} />
+        <main>
+            <div className={styles.containerDropdown}>
+                <div className={styles.button} onClick={toggleOpen}>
+                    {title}
+                    <div>
+                        <Arrow style={rotateArrowStyle} />
+                    </div>
                 </div>
+                {isOpen && <p className={styles.description}>{description}</p>}
             </div>
-            {isOpen && <p className={styles.description}>{description}</p>}
-        </div>
+        </main>
+        
     );
 };
 

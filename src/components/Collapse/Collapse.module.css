@@ -1,7 +1,7 @@
 .containerDropdown {
     width: 100%;
     min-width: 260px;
-    height: fit-content;
+    max-height: max-content;
     margin: 0 auto;
     background-color: var(--tertiary);
     border-radius: 5px;
@@ -44,18 +44,6 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
-/* .rotateOpen {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease; 
-}
-
-.rotateClose {
-    transform: rotate(0deg);
-    transition: transform 0.3s ease; 
-} */
-
-
 
 @media screen and (max-width: 768px) {
     .container {

@@ -1,0 +1,45 @@
+.carrouselBgImg {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    margin:  auto;
+
+}
+
+.collapseContainers {
+    margin: 15vh auto;
+    
+    width: 100%;
+    max-width: 1240px;
+    height: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.collapseDescription {
+    margin-left: 0;
+    width: 582px;
+    height: 52px;
+    transform: translateX(-12px);
+}
+
+.title{
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 36px;
+}
+.location {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.collapseEquipments {
+    margin-right: 0;
+    width: 582px;
+    height: 52px;
+    transform: translateX(12px);
+}
+

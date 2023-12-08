@@ -15,6 +15,10 @@ const Collapse = ({ title, description }) => {
         transform: isRotated ? "rotate(0)" : "rotate(180deg)",
     };
 
+    const textItem = Array.isArray(description)
+    ? description.map((item, index) => <p key={index}>{item}</p>)
+    : description;
+    
     return (
         <main>
             <div className={styles.containerDropdown}>
@@ -24,7 +28,8 @@ const Collapse = ({ title, description }) => {
                         <Arrow style={rotateArrowStyle} />
                     </div>
                 </div>
-                {isOpen && <p className={styles.description}>{description}</p>}
+                {isOpen && 
+                    <p className={styles.description}>{textItem}</p>}
             </div>
         </main>
         

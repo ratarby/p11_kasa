@@ -12,10 +12,10 @@
 .main p {
     font-size: calc(1.5rem + 1.2vw);
     color : var(--secondary);
+    line-height: 7;
 }
-
 .link {
-    margin: auto 0 20px;
+    margin: auto 20px;
     font-size: 18px;
     color : var(--secondary);
 }

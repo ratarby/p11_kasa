@@ -49,12 +49,14 @@
     .container {
         margin: 10px 0;
     }
+
     .button {
-       font-size: 15px;
-       height: 30px;
-       border-radius: 5px;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 5px;
     }
+
     .text {
         font-size: 13px;
     }
- }
+}

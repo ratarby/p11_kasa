@@ -9,10 +9,10 @@ const Carousel = ( ) => {
 
     
     return (
-        <div className={styles.carouselBgImg}>
+        <div className={styles.carrouselBgImg}>
             <img src={housing.cover} alt={housing.title} />
-            <h1>{housing.title}</h1>
-            <p>{housing.location}</p>
+            <h2 className={styles.title}>{housing.title}</h2>
+            <p className={styles.location}>{housing.location}</p>
         </div>
     );
 };

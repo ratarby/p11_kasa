@@ -1,3 +1,14 @@
+.detailsContainer .carrouselBgImg .title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1240px;
+    justify-content: space-between;
+    grid-template-columns: 3;
+}
+
+
 .carrouselBgImg {
     width: 100%;
     max-width: 1240px;
@@ -7,8 +18,7 @@
 }
 
 .collapseContainers {
-    margin: 15vh auto;
-    
+    margin: 10vh auto;
     width: 100%;
     max-width: 1240px;
     height: 57px;
@@ -17,12 +27,6 @@
     justify-content: space-between;
 }
 
-.collapseDescription {
-    margin-left: 0;
-    width: 582px;
-    height: 52px;
-    transform: translateX(-12px);
-}
 
 .title{
     margin-top: 35px;
@@ -35,11 +39,40 @@
     font-size: 18px;
 }
 
+.collapseDescription {
+    margin-left: 0;
+    width: 582px;
+    height: 52px;
+    transform: translateX(-12px);
+    line-height: 1.2;
+}
 
 .collapseEquipments {
     margin-right: 0;
     width: 582px;
     height: 52px;
     transform: translateX(12px);
+    line-height: 1.2;
 }
+
+.hostAndRatingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tags {
+    width: 100%;
+    max-width: 1240px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+
 

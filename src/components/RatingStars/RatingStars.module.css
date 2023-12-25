@@ -1,12 +1,17 @@
 .ratingStars {
-    width: 100%;
-    max-width: 1240px;
-    margin: 30px auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    font-size: 2.25rem;
-    gap: 15px;
+    font-size: 2rem;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 650px) {
+    .ratingStars {
+        font-size: 1.8rem;
+        transform: translateY(-5px);
+    }
+    
 }
 
 

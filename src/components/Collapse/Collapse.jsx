@@ -16,7 +16,7 @@ const Collapse = ({ title, description }) => {
     };
 
     const textItem = Array.isArray(description)
-    ? description.map((item, index) => <p key={index}>{item}</p>)
+    ? description.map((item, index) => <div key={index}>{item}</div>)
     : description;
     
     return (
@@ -29,7 +29,7 @@ const Collapse = ({ title, description }) => {
                     </div>
                 </div>
                 {isOpen && 
-                    <p className={styles.description}>{textItem}</p>}
+                    <div className={styles.description}>{textItem}</div>}
             </div>
         </main>
         

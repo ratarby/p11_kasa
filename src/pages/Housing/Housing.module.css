@@ -1,78 +1,186 @@
-.detailsContainer .carrouselBgImg .title{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1240px;
-    justify-content: space-between;
-    grid-template-columns: 3;
+main    {
+    padding: 0 5px;
 }
-
 
 .carrouselBgImg {
-    width: 100%;
+    margin-top: -30px;
     max-width: 1240px;
-    height: 415px;
-    margin:  auto;
-
 }
 
-.collapseContainers {
-    margin: 10vh auto;
+
+.collapseContainers .collapseDescription .collapseEquipments{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     width: 100%;
     max-width: 1240px;
     height: 57px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 1;
+}
+
+.titleAndLocation  {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap : 20px;
 }
 
 
-.title{
-    margin-top: 35px;
+.title {
     font-weight: 500;
     font-size: 36px;
 }
 .location {
-    margin-top: 10px;
+    margin-top: -10px;
     font-weight: 500;
     font-size: 18px;
+
+} 
+
+.titlesAndTagsAndHost {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    margin-top: 30px;    
 }
 
-.collapseDescription {
+
+
+.titlesAndTags h1,.titlesAndTags h2 {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
     margin-left: 0;
-    width: 582px;
-    height: 52px;
-    transform: translateX(-12px);
-    line-height: 1.2;
+    margin-right: 0;
+    justify-content: flex-start;
+    color: var(--secondary);
+    font-weight: normal;
 }
 
-.collapseEquipments {
-    margin-right: 0;
-    width: 582px;
-    height: 52px;
-    transform: translateX(12px);
-    line-height: 1.2;
+
+
+.collapseContainers {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collapseDescription, .collapseEquipments {
+    width: 49%;
+    margin-top: 30px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+
+.detailsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1240px;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .hostAndRatingContainer {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 }
 
 .tags {
     width: 100%;
     max-width: 1240px;
-    margin-top: 25px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 15px;
 }
+.titlesAndTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
 
 
 
+@media all and (max-width: 650px) {
+    main {
+        padding: 0 5px;
+    }
+    .titlesAndTags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titlesAndTagsAndHost {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hostAndRatingContainer {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 90%;
+    }
+
+    .titlesAndTags h1, .titlesAndTags h2 {
+        width: 100%;
+        color: var(--secondary);
+        font-weight: normal;
+    }
+
+    .collapseContainers {
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+        
+    }
+    
+
+    .collapseDescription, .collapseEquipments {
+        width: 100%;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+}
 

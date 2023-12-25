@@ -8,9 +8,12 @@ import styles from "./Error404.module.css";
 
 const Error404 = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.errorContainer}>
     <SVG404 />
-    <p>Oups! La page que vous demandez n'existe pas.</p>
+    <div className={styles.textError}>
+          <div className={styles.textError1}>Oups! La page que </div>
+          <div className={styles.textError2}>vous demandez n'existe pas.</div>
+    </div>
     <Link className={styles.link} to="/">
       Retourner sur la page d'accueil
     </Link>

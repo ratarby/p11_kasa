@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Logo />
-      <p>&copy; {year} All rights reserved</p>
+        <div>&copy; {year} All rights reserved</div>
     </footer>
   );
 };

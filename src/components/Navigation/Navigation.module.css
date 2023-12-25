@@ -17,3 +17,25 @@
 .activeLink {
     text-decoration: underline;
 }
+
+@media all and (max-width: 650px) {
+    .Navigation {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 24px;
+        gap: 20px;
+    }
+    
+    
+    
+    .link, .activeLink {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .activeLink {
+        text-decoration: underline;
+
+    }
+}

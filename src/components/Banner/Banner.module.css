@@ -22,7 +22,7 @@
 .sentence {
     width: 100%;
     margin: 0 auto;
-    padding-right: 55px;
+    padding-right: 35px;
     padding-left: 15px;
     max-width: 1440px;
     height: 223px;
@@ -52,5 +52,10 @@ img {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
+
+
+    
+
 
 

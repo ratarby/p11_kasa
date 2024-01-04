@@ -42,7 +42,7 @@
 img {
     width: 100%;
     max-width: 1240px;
-    /* height: 100%; */
+    height: 100%;
     background-size: cover;
     object-fit: cover;
     border-radius: 25px;
@@ -55,7 +55,12 @@ img {
 
 
 
-    
+    @media all and (max-width: 450px) {
+        .sentence {
+            padding-right: 75px;
+            padding-left: 15px;
+        }
+    }
 
 
 

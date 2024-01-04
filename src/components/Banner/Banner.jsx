@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Banner.module.css";
 
 const Banner = ({title, image}) => {
-
   return (
     <main>
       <div className={styles.banner}>

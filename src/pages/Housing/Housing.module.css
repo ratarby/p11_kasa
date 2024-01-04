@@ -146,11 +146,13 @@ main    {
         margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: flex-start;
-        gap: 90%;
+        gap: 130%;
     }
 
     .titlesAndTags h1, .titlesAndTags h2 {
